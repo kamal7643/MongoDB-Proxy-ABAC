@@ -1,0 +1,5 @@
+{
+    "Alice":{"position":"Manager", "region":"India", "team":"Ads"}, 
+    "Kamal":{"position":"Developer", "region":"USA", "team":"Backend", "wfh":"yes"}, 
+    "Bob":{"position":"Recruiter", "region":"India", "team":"HR"}
+}
