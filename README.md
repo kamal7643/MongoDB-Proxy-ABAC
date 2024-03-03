@@ -48,3 +48,6 @@ This repository contains the implementation of a Proxy ABAC (Attribute-Based Acc
 
 ![Proxy Server Workflow](images/proxy_server_workflow.png)
 
+## Development machine configuration
+Python 3.9.6
+macos
