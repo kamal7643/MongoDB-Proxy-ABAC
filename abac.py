@@ -17,38 +17,9 @@ MONGODB_PORT = 27017  # default MongoDB port
 
 
 
-# read policies from mongodb server
-def read_policy():
-    # mongodb_reader, mongodb_writer = await asyncio.open_connection(MONGODB_HOST, MONGODB_PORT)
-    # header, body = generate_find_OP_MSG("mtp", "policy", {}, 102)
-    # print("read policy", mongodb_reader, mongodb_writer, header, body)
-    # policies = {}
-    # try:
-    #     mongodb_writer.write(header);
-    #     mongodb_writer.write(body);
-    #     await mongodb_writer.drain()
-    #     print("done")
-    #     header = None
-    #     body = None
-    #     # header =  await mongodb_reader.readexactly(16)
-    #     # print(struct,unpack('<iiii', header[:16]))
-    #     # body = await mongodb_reader.readexactly(struct.unpack('<i', header[:4]))
-    #     print(" READING POLICIES : ")
-    #     print(header, body)
-    #     # Close the connection
-    #     mongodb_writer.close()
-    #     await mongodb_writer.wait_closed()
-        
-    # except asyncio.IncompleteReadError:
-    #     pass
-    # except Exception as e:
-    #     print(f"Error reading policy: {e}")
-    return {}
 
 # Attribute based access control system (ABAC)
 def abac(database, collection, operation):
-    # await read_policy()
-    return True
 
     # read user attributes from './data/user_attributes.json' file
     with open('data/user_attributes.json', 'r') as json_file:
